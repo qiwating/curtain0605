@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload/types'
 
+import PriceInput from '../../../app/_components/PriceInput'
 import { admins } from '../../access/admins'
 import { Archive } from '../../blocks/ArchiveBlock'
 import { CallToAction } from '../../blocks/CallToAction'
@@ -12,10 +13,6 @@ import { beforeProductChange } from './hooks/beforeChange'
 import { deleteProductFromCarts } from './hooks/deleteProductFromCarts'
 import { revalidateProduct } from './hooks/revalidateProduct'
 import { ProductSelect } from './ui/ProductSelect'
-import PriceInput from '../../../app/_components/PriceInput';
-
-
-
 
 const Products: CollectionConfig = {
   slug: 'products',
@@ -95,7 +92,7 @@ const Products: CollectionConfig = {
                 },
               },
             },
-           {
+            {
               name: 'priceJSON',
               label: 'Price JSON',
               type: 'textarea',

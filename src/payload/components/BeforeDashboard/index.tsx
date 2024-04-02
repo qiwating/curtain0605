@@ -55,11 +55,7 @@ const BeforeDashboard: React.FC = () => {
         </li>
         <li>
           {'Modify your '}
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="" target="_blank" rel="noopener noreferrer">
             collections
           </a>
           {' and add more '}
