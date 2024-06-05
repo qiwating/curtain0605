@@ -34,11 +34,12 @@ export default async function Product({ params: { slug } }) {
     notFound()
   }
 
-  const { relatedProducts } = product
+  const { layout, relatedProducts } = product
 
   return (
     <>
       <ProductHero product={product} />
+      <Blocks blocks={layout} />
       {product?.enablePaywall && <PaywallBlocks productSlug={slug as string} disableTopPadding />}
       <Blocks
         disableTopPadding
