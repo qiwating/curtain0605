@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload/types'
 
-import PriceInput from '../../../app/_components/PriceInput'
+// import PriceInput from '../../../app/_components/PriceInput'
 import { admins } from '../../access/admins'
 import { Archive } from '../../blocks/ArchiveBlock'
 import { CallToAction } from '../../blocks/CallToAction'
